@@ -16,10 +16,10 @@ void *memcpy(void *dst, const void *src, size_t n){
     while(n--){
         *d++ = *s++;
     }
-    return dst
+    return dst;
 }
 
-void strcpy(char *dst, const char *src){
+char* strcpy(char *dst, const char *src){
     char *d = dst;
     while(*src){
         *d++ = *src++;
